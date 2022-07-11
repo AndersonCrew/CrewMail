@@ -5,5 +5,5 @@ public class Constants {
     public static String HAS_SSL = "HAS_SSL";
     public static String DOMAIN = "DOMAIN";
     public static String COMPANY_NAME = "COMPANY_NAME";
-    public static String ORGANIZATION = "ORGANIZATION_NEW02";
+    public static String ORGANIZATION = "ORGANIZATION_NEW_11072022";
 }

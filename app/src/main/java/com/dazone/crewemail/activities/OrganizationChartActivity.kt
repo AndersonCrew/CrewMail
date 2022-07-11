@@ -2,6 +2,8 @@ package com.dazone.crewemail.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProviders
@@ -42,6 +44,7 @@ class OrganizationChartActivity : BaseActivity() {
     }
 
     private fun initView() {
+        showProgressDialog()
         viewModel?.selectedClick?.onEach {
             if(!it.isNullOrEmpty()) {
                 resetChecked(it)
@@ -74,6 +77,10 @@ class OrganizationChartActivity : BaseActivity() {
             }
 
         }
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            dismissProgressDialog()
+        }, 3000)
     }
 
     override fun onDestroy() {

@@ -3,6 +3,7 @@ package com.dazone.crewemail.activities.new_refactor
 import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
@@ -64,6 +65,16 @@ class OrganizationAdapter(private val onCheckedDone: (PersonData, Boolean) -> Un
         holder.binding.icCheck.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked != organization.isChosen) {
                 onCheckedDone.invoke(getItem(position), isChecked)
+            }
+        }
+
+        holder.binding.imgFolder.setOnClickListener {
+            if(holder.binding.rvMembers.visibility == View.GONE) {
+                holder.binding.rvMembers.visibility = View.VISIBLE
+                holder.binding.rvChildOrganization.visibility = View.VISIBLE
+            } else {
+                holder.binding.rvMembers.visibility = View.GONE
+                holder.binding.rvChildOrganization.visibility = View.GONE
             }
         }
     }

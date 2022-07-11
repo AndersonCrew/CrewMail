@@ -36,8 +36,6 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.lifecycle.ViewModelProviders;
-
 import com.dazone.crewemail.DaZoneApplication;
 import com.dazone.crewemail.R;
 import com.dazone.crewemail.Service.UploadFileToServer;
@@ -47,7 +45,6 @@ import com.dazone.crewemail.activities.ContactActivity;
 import com.dazone.crewemail.activities.ListEmailActivity;
 import com.dazone.crewemail.activities.LoginActivity;
 import com.dazone.crewemail.activities.OrganizationChartActivity;
-import com.dazone.crewemail.activities.new_refactor.OrganizationViewModel;
 import com.dazone.crewemail.adapter.AdapterMailCreateAttachLinear;
 import com.dazone.crewemail.adapter.AdapterMailCreateFromSpiner;
 import com.dazone.crewemail.customviews.AlertDialogView;
@@ -74,14 +71,12 @@ import com.dazone.crewemail.utils.MailHelper;
 import com.dazone.crewemail.utils.Prefs;
 import com.dazone.crewemail.utils.Statics;
 import com.dazone.crewemail.utils.StaticsBundle;
-import com.dazone.crewemail.utils.TimeUtils;
 import com.dazone.crewemail.utils.Util;
 import com.dazone.crewemail.view.tokenautocomplete.FilteredArrayAdapter;
 import com.dazone.crewemail.view.tokenautocomplete.TokenCompleteTextView;
 import com.dazone.crewemail.webservices.HttpRequest;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.nononsenseapps.filepicker.FilePickerActivity;
 
@@ -91,11 +86,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.reflect.Type;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import javax.annotation.Nullable;
 
@@ -622,9 +614,11 @@ public class FragmentMailCreate extends BaseFragment implements pushlishProgress
             }
         }
 
+        etReceiver.allowCollapse(true);
+        etReceiver.performCollapse(true);
         adapter.notifyDataSetChanged();
 
-        etReceiver.allowCollapse(true);
+
     }
 
     public void bindData(MailBoxData data) {
