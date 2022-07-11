@@ -46,10 +46,11 @@ class OrganizationChartActivity : BaseActivity() {
     private fun initView() {
         showProgressDialog()
         viewModel?.selectedClick?.onEach {
-            if(!it.isNullOrEmpty()) {
+            it?.let {
                 resetChecked(it)
                 viewModel?.updateSelected(null)
             }
+
         }?.launchIn(lifecycleScope)
 
         getIntentSelected()
@@ -111,7 +112,7 @@ class OrganizationChartActivity : BaseActivity() {
         Prefs().putListOrganization(data)
 
 
-        if(!selected.isNullOrEmpty()) {
+        if(selected != null ) {
             val intent = Intent()
             intent.putExtra(StaticsBundle.BUNDLE_LIST_PERSON, Gson().toJson(selected))
             setResult(RESULT_OK, intent)

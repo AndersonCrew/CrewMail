@@ -588,6 +588,7 @@ public class FragmentMailCreate extends BaseFragment implements pushlishProgress
     }
 
     public void handleSelectedOrganizationResult(int type, ArrayList<PersonData> resultList) {
+        Log.d("CHOOSE_DEPARTMENT", "LIST RECEIVE SIZE = " + resultList.size());
         ArrayList<PersonData> uniqueList = new ArrayList<>();
         PersonCompleteView etReceiver;
         if(type == Statics.ORGANIZATION_TO_ACTIVITY) {
@@ -598,7 +599,14 @@ public class FragmentMailCreate extends BaseFragment implements pushlishProgress
             etReceiver = edtMailCreateBcc;
         }
 
-        etReceiver.clear();
+        if(etReceiver.getObjects() != null && etReceiver.getObjects().size() > 0) {
+            for(PersonData personData : etReceiver.getObjects()) {
+                etReceiver.removeObject(personData);
+            }
+
+            etReceiver.getObjects().clear();
+            etReceiver.clear();
+        }
 
         for(PersonData personData : resultList) {
             if(!uniqueList.contains(personData)) {
@@ -606,11 +614,15 @@ public class FragmentMailCreate extends BaseFragment implements pushlishProgress
             }
         }
 
+        Log.d("CHOOSE_DEPARTMENT", "uniqueList SIZE = " + resultList.size());
+
+        etReceiver.setTokenLimit(100);
         for (PersonData personData : uniqueList) {
             personData.setTypeAddress(getTypeAddress(etReceiver));
             UserData userDto = UserData.getUserInformation();
             if (!personData.getEmail().equals(userDto.getmEmail())) {
                 etReceiver.addObject(personData);
+                Log.d("CHOOSE_DEPARTMENT", "ADD");
             }
         }
 
