@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:src="@drawable/avatar_l"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/imgAvatar"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+ >
+        <TextView
+            android:id="@+id/tvName"
+            tools:text="Anderson"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            tools:text="Dazone"
+            android:gravity="top"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/ckMember"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+</RelativeLayout>

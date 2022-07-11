@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/places_ic_search"
+                android:hint="@string/search"
+                android:padding="@dimen/dimen_5_10"
+                android:background="@drawable/linear_custom_background"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/loading_layout" />
+    <include layout="@layout/load_fail_layout" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

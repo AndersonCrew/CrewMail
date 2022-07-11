@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_20"
+        android:textColor="@color/btn_auto_login"
+        android:textSize="@dimen/dimen_17" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_auto"
+        android:padding="@dimen/dimen_20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16_sp" />
+
+    <View
+        android:id="@+id/view_auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_05_1"
+        android:layout_below="@+id/tv_message"
+        android:background="@color/ccc_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_auto"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_16_32" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_16_32" />
+
+        <TextView
+            android:id="@+id/btn_no_auto"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/auto_login_button_no"
+            android:textColor="@color/btn_auto_login"
+            android:textSize="@dimen/dimen_16_sp" />
+
+        <TextView
+            android:id="@+id/btn_yes_auto"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/auto_login_button_yes"
+            android:textColor="@color/btn_auto_login"
+            android:textSize="@dimen/dimen_16_sp" />
+    </LinearLayout>
+</RelativeLayout>

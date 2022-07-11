@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--From address-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:layout_marginTop="@dimen/dimen_10_20"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_16sp_gray"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:text="@string/string_title_mail_create_from" />
+
+            <Spinner
+                android:id="@+id/spnMailCreateAccountFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:entries="@array/account"
+                android:gravity="left|center"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_2"
+            android:layout_marginBottom="@dimen/dimen_5_10"
+            android:layout_marginTop="@dimen/dimen_5_10"
+            android:background="@color/view_create_mail"
+            android:visibility="visible" />
+
+        <!--To address-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_16sp_gray"
+                android:layout_gravity="top|left|center"
+                android:layout_marginTop="@dimen/dimen_5_10"
+                android:text="@string/string_title_mail_create_to" />
+
+            <ImageButton
+                android:id="@+id/imgMailCreateImageDropDown"
+                android:layout_width="@dimen/dimen_18_36"
+                android:layout_height="@dimen/dimen_20_40"
+                android:layout_gravity="top|left|center"
+                android:layout_marginLeft="@dimen/dimen_3_6"
+                android:layout_marginTop="@dimen/dimen_5_10"
+                android:background="@color/transparent"
+                android:gravity="left|center|top"
+                android:src="@drawable/dropdow_arr_ic" />
+
+            <com.dazone.crewemail.customviews.PersonCompleteView
+                android:id="@+id/edtMailCreateTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_8_16"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center"
+                android:imeOptions="actionDone"
+                android:paddingRight="@dimen/dimen_5_10"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_16_32" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMailCreateOrgTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="@dimen/dimen_4_8"
+                    android:src="@drawable/add_org_btn" />
+
+                <ImageView
+                    android:id="@+id/imgMailCreateContactTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="@dimen/dimen_4_8"
+                    android:src="@drawable/contact_icon" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_2"
+            android:layout_marginBottom="@dimen/dimen_5_10"
+            android:layout_marginTop="@dimen/dimen_5_10"
+            android:background="@color/view_create_mail"
+            android:visibility="visible" />
+
+        <!--Bcc and Cc address-->
+        <LinearLayout
+            android:id="@+id/linear_main_bcc_cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--CC address-->
+            <LinearLayout
+                android:id="@+id/ln_mail_cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp_gray"
+                        android:layout_gravity="left|center|top"
+                        android:layout_marginTop="@dimen/dimen_5_10"
+                        android:gravity="left|center"
+                        android:text="@string/string_title_mail_create_cc" />
+
+                    <com.dazone.crewemail.customviews.PersonCompleteView
+                        android:id="@+id/edtMailCreateCc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/dimen_28_56"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center"
+                        android:imeOptions="actionGo"
+                        android:paddingRight="@dimen/dimen_5_10"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_16_32" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imgMailCreateOrgCc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/dimen_4_8"
+                        android:src="@drawable/add_org_btn" />
+                        <ImageView
+                            android:id="@+id/imgMailCreateContactCc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/dimen_4_8"
+                            android:src="@drawable/contact_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_2"
+                    android:layout_marginBottom="@dimen/dimen_5_10"
+                    android:layout_marginTop="@dimen/dimen_5_10"
+                    android:background="@color/view_create_mail"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!--BCC Address-->
+
+            <LinearLayout
+                android:id="@+id/ln_mail_bcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp_gray"
+                        android:layout_gravity="center|left|top"
+                        android:layout_marginTop="@dimen/dimen_5_10"
+                        android:gravity="left|center"
+                        android:text="@string/string_title_mail_create_bcc" />
+
+                    <com.dazone.crewemail.customviews.PersonCompleteView
+                        android:id="@+id/edtMailCreateBcc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_20_40"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center"
+                        android:imeOptions="actionGo"
+                        android:paddingRight="@dimen/dimen_5_10"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_16_32" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imgMailCreateOrgBcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/dimen_4_8"
+                        android:src="@drawable/add_org_btn" />
+                        <ImageView
+                            android:id="@+id/imgMailCreateContactBcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/dimen_4_8"
+                            android:src="@drawable/contact_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_2"
+                    android:layout_marginBottom="@dimen/dimen_5_10"
+                    android:layout_marginTop="@dimen/dimen_5_10"
+                    android:background="@color/view_create_mail"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Subject-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtMailCreateSubject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:hint="@string/string_title_mail_create_subject"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_17_35" />
+
+            <ImageButton
+                android:id="@+id/imgMailCreateAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="@dimen/dimen_4_8"
+                android:layout_marginLeft="@dimen/dimen_4_8"
+                android:layout_marginRight="@dimen/dimen_5_10"
+                android:layout_marginTop="@dimen/dimen_4_8"
+                android:background="@color/transparent"
+                android:src="@drawable/add_attach_ic" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_2"
+            android:layout_marginBottom="@dimen/dimen_5_10"
+            android:layout_marginTop="@dimen/dimen_5_10"
+            android:background="@color/view_create_mail"
+            android:visibility="visible" />
+
+        <!--Content-->
+        <EditText
+            android:id="@+id/edtMailCreateContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:background="@android:color/transparent"
+            android:gravity="left|top"
+            android:hint="@string/string_title_compose_email"
+            android:paddingBottom="@dimen/dimen_10_20"
+            android:paddingTop="@dimen/dimen_5_10"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_15_30" />
+
+        <!--Attachment-->
+        <LinearLayout
+            android:id="@+id/linear_attach"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:layout_marginTop="@dimen/dimen_10_20"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:layout_weight="1.7"
+                android:progress="0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!--Quote reply-->
+        <CheckBox
+            android:id="@+id/chkMailCreateCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:checked="true"
+            android:text="@string/string_mail_create_quote"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtMailCreateOriginalMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:gravity="left|center"
+            android:paddingTop="@dimen/dimen_5_10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_14_28"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>

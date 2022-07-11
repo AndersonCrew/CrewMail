@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_list_check_all"
+        android:icon="@drawable/navbar_check_ic"
+        android:title="@string/check_all"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_list_delete"
+        android:icon="@drawable/navbar_delete_ic"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_list_set_unread"
+        android:icon="@drawable/navbar_mail_ic"
+        android:title="@string/set_unread"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_list_set_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="@string/set_unread"
+        app:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/menu_filter_address" android:title="@string/string_title_mail_from_address"/>
+            <item android:id="@+id/menu_filter_sender" android:title="@string/string_title_mail_sender_name"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/navbar_more_ic"
+        app:showAsAction="always"
+        android:title="@string/more">
+        <menu>
+            <item android:id="@+id/menu_move_to" android:title="@string/move_to"/>
+            <item android:id="@+id/menu_mark_important" android:title="@string/mark_as_important"/>
+            <item android:id="@+id/menu_tag" android:title="@string/menu_tag"/>
+        </menu>
+    </item>
+</menu>

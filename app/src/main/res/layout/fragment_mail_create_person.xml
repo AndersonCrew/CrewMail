@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dazone.crewemail.customviews.TokenLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tokenMailCreateItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_10_20"
+    android:background="@drawable/color_background_mail_unknown"
+    android:layout_marginRight="@dimen/dimen_5_10"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imgError"
+        android:src="@drawable/ic_warning"
+        android:tint="@color/colorTextError"
+        android:layout_width="15dp"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dimen_5_10"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txtMailCreatePersonNameOrMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        tools:text="Anderson"
+        android:gravity="left|center"
+        android:paddingBottom="@dimen/dimen_5_10"
+        android:paddingTop="@dimen/dimen_5_10"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_15_30" />
+
+</com.dazone.crewemail.customviews.TokenLayout>

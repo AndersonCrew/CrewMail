@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mail_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_press_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:padding="@dimen/dimen_10_20"
+        android:id="@+id/relMailListMain">
+
+        <ImageView
+            android:id="@+id/item_mail_avatar"
+            style="@style/default_avatar_45dp"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:contentDescription="@null"
+            android:src="@null"
+            />
+
+        <ImageView
+            android:id="@+id/item_mail_avatar_check"
+            style="@style/default_avatar_45dp"
+            android:layout_marginRight="@dimen/dimen_10_20"
+            android:alpha="0"
+            android:background="@drawable/circle_trans_blue"
+            android:contentDescription="@null"
+            android:padding="@dimen/dimen_8_16"
+            android:src="@drawable/list_check_choose_ic"/>
+
+        <LinearLayout
+            android:id="@+id/item_mail_name_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_mail_avatar"
+            android:layout_toRightOf="@+id/item_mail_avatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mail_name"
+                style="@style/text_16sp_black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="name"
+                android:layout_marginRight="@dimen/dimen_2_4"/>
+            <TextView
+                android:id="@+id/item_mail_status"
+                style="@style/text_13sp_gray"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/item_mail_date"
+                style="@style/text_13sp_gray"
+                android:layout_gravity="center"
+                android:text="2015-11-20 09:20 am"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mail_name_wrapper"
+            android:layout_toEndOf="@+id/item_mail_avatar"
+            android:layout_toRightOf="@id/item_mail_avatar"
+            android:id="@+id/item_mail_linear_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_13_25"
+                android:id="@+id/item_mail_address"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="address" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/border"/>
+</LinearLayout>

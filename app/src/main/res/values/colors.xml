@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_base_color">#52afe7</color>
+    <color name="myColor_Primary">#52AFE7</color>
+
+    <color name="colorPrimary">#4282bf</color>
+    <color name="colorPrimaryDark">#1b6bb9</color>
+    <color name="colorAccent">#4282bf</color>
+    <color name="login">#3f95e9</color>
+
+    <color name="disable_text_color">#878787</color>
+    <color name="gray_light">#DFDFDF</color>
+    <color name="gray_dark">#818181</color>
+
+    <color name="gray_50_trans">#50DFDFDF</color>
+    <color name="gray_compose_mail">#888888</color>
+    <color name="gray_compose_mail_v1">#b6b6b6</color>
+    <color name="view_create_mail">#cecece</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_background_mail_to">#dbedff</color>
+    <color name="color_background_mail_bcc_cc">#e7e4fb</color>
+    <color name="color_background_mail_unknown">#fde3de</color>
+    <color name="blue_trans_color">#85277bcd</color>
+    <color name="list_mail_activated_color">#d4e9fd</color>
+    <color name="black">#000000</color>
+
+    <color name="color_mail_detail_txt_info_address">#777777</color>
+    <color name="color_mail_attach_background">#f0f0f0</color>
+    <color name="share_border_color">#d5d5d5</color>
+    <color name="share_person_color">#545454</color>
+    <color name="mail_month_background">#eeeeee</color>
+    <color name="mail_month_title">#565656</color>
+    <color name="mail_unread">#fffdf1</color>
+    <color name="white_50_trans">#50FFFFFF</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+
+    <color name="divider_color">#dddddd</color>
+
+    <color name="divider_add_new_schedule_color">#b8b8b8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="st_bg">#ededed</color>
+    <color name="tree_user_position_color">#777777</color>
+    <color name="custom_dialog_confirm_draft">#5DBCD2</color>
+    <color name="custom_dialog_confirm_draft_ccc">#cccccc</color>
+    <color name="roboto_color">#5d5d5d</color>
+    <color name="app_base_color_login">#4282bf</color>
+    <color name="btn_auto_login">#277bcd</color>
+    <color name="ccc_color">#c4c4c4</color>
+    <color name="login_button_login_background_new">#3f95e9</color>
+    <color name="linear_custom_bg">#e9e9e9</color>
+    <color name="colorTextError">#ff5f45</color>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- TITTLE -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    style="@style/Button"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:padding="@dimen/padding_block"
+                    android:src="@drawable/ic_keyboard_backspace_white_48dp" />
+
+                <TextView
+                    style="@style/SettingRow"
+                    android:layout_toRightOf="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:text="@string/setting_notification"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <View style="@style/Divider" />
+
+            <!-- NEW MAIL -->
+            <RelativeLayout
+                style="@style/SettingRow"
+                android:padding="0dp">
+
+                <TextView
+                    style="@style/SettingRow"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_notification_new_mail" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_new_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_block"
+                    android:theme="@style/Color1SwitchStyle" />
+            </RelativeLayout>
+
+            <View style="@style/Divider" />
+
+            <!-- METHOD LABEL-->
+            <TextView
+                style="@style/LabelRow"
+                android:text="@string/setting_notification_method_label" />
+
+
+            <View style="@style/Divider" />
+
+            <!-- SOUND -->
+            <RelativeLayout
+                style="@style/SettingRow"
+                android:padding="0dp">
+
+                <TextView
+                    style="@style/SettingRow"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_notification_sound" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_block"
+                    android:theme="@style/Color1SwitchStyle" />
+            </RelativeLayout>
+
+            <View style="@style/Divider" />
+
+            <!-- VIBRATE -->
+            <RelativeLayout
+                style="@style/SettingRow"
+                android:padding="0dp">
+
+                <TextView
+                    style="@style/SettingRow"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_notification_vibrate" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_block"
+                    android:theme="@style/Color1SwitchStyle" />
+            </RelativeLayout>
+
+            <View style="@style/Divider" />
+
+            <!-- TIME LABEL-->
+            <TextView
+                style="@style/LabelRow"
+                android:text="@string/setting_notification_time_label" />
+
+
+            <View style="@style/Divider" />
+
+            <!-- TIME -->
+            <RelativeLayout
+                style="@style/SettingRow"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_notification_time"
+                    style="@style/SettingRow"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/switch_time"/>
+                <!-- android:text="@string/setting_notification_time"-->
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_block"
+                    android:theme="@style/Color1SwitchStyle" />
+            </RelativeLayout>
+            <!-- TIME 2-->
+            <LinearLayout
+                style="@style/SettingRow"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_from_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:background="@drawable/bg_corner_45"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/setting_notification_from_time"
+                    android:textColor="@color/disable_text_color"
+                    android:textSize="@dimen/notification_label_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/disable_text_color"
+                    android:text="~"
+                    android:textSize="@dimen/notification_label_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_to_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:background="@drawable/bg_corner_45"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/setting_notification_to_time"
+                    android:textColor="@color/disable_text_color"
+                    android:textSize="@dimen/notification_label_text_size" />
+            </LinearLayout>
+
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

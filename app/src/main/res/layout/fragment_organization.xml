@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shared_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35_70"
+            android:drawablePadding="@dimen/dimen_5_10"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_12_24"
+            android:paddingRight="@dimen/dimen_12_24"
+            android:textColor="@color/share_person_color"
+            android:textSize="@dimen/text_16_32"
+            android:visibility="visible" />
+
+        <View style="@style/border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_12_24"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/share_company_btn"
+                style="@style/share_tab_btn_style"
+                android:background="@drawable/bg_blue"
+                android:text="@string/company"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="@dimen/dimen_5_10"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/share_search_btn"
+                style="@style/share_tab_btn_style"
+                android:background="@drawable/bg_white"
+                android:text="@string/search"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/share_search_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_12_24"
+            android:paddingRight="@dimen/dimen_12_24"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/share_search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_share_search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="@dimen/dimen_10_20"
+                android:paddingRight="@dimen/dimen_40_80"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/share_search_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:contentDescription="@string/search"
+                android:padding="@dimen/dimen_5_10"
+                android:src="@drawable/ic_action_action_search" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:gravity="center"
+            android:text="@string/no_data"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+</LinearLayout>

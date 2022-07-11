@@ -1,0 +1,271 @@
+﻿<resources>
+    <string name="app_name">船员信箱</string>
+
+    <string name="mailActivity_message_download_apk">正在下载安装文件.\n请稍等.</string>
+    <string name="loginActivity_message_wrong_server_site">无法连接到服务器.</string>
+
+    <!-- Login screen -->
+    <string name="string_server_site">组（公司）ID</string>
+    <string name="login_username">个人身份证</string>
+    <string name="login_password">密码</string>
+    <string name="string_sign_up">建立新的组织</string>
+    <string name="login_login">登入</string>
+    <!-- Sign Up screen -->
+    <string name="sign_up_suggest">还没有公司编号？</string>
+    <string name="enter_your_email">邮件地址</string>
+    <string name="register">船运</string>
+    <string name="sign_up_note">请输入您的电子邮件地址.</string>
+    <string name="sign_up_note2">我们将在您输入的电子邮件地址上发送指向Crewcloud的链接以创建组（公司）。</string>
+    <string name="title_sign_up_screen">创建组（公司）</string>
+    <string name="current_password">当前密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="change_password">修改密码</string>
+
+
+    <string name="save">保存到</string>
+
+    <!-- TIME PICKER -->
+    <string name="time_picker_title">选择时间</string>
+
+    <!-- DIALOG -->
+
+    <!-- SETTING -->
+    <string name="profle">我的资料</string>
+    <string name="setting_general">邮件设置</string>
+    <string name="setting_notification">通知设定</string>
+    <string name="setting_general_download_path_label">下载路径</string>
+    <string name="setting_general_download_path_default">/storage/CrewMail/download/</string>
+    <string name="setting_general_set_password_code">密码设定</string>
+    <string name="setting_general_change_password_code">修改密码</string>
+    <string name="setting_general_adjust_to_screen_width">适合床宽</string>
+    <string name="setting_notification_new_mail">通知设定</string>
+    <string name="setting_notification_method_label">通知事项</string>
+    <string name="setting_notification_sound">音效</string>
+    <string name="setting_notification_vibrate">震动</string>
+    <string name="setting_notification_time_label">提醒时间</string>
+    <string name="setting_notification_time">使用提醒时间</string>
+    <string name="setting_notification_time_2">*您只能在设定的时间接收通知.</string>
+    <string name="setting_notification_from_time">AM 08:00</string>
+    <string name="setting_notification_to_time">PM 19:00</string>
+    <string name="setting_notification_time_error">结束时间必须大于开始时间.</string>
+    <string name="personal_id">用户名</string>
+    <string name="email">电邮地址</string>
+    <string name="company_name">机构名称</string>
+    <string name="phone">手机</string>
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">是的</string>
+    <string name="auto_login_button_no">没有啦</string>
+    <string name="auto_login_company_ID">组号 :&#160;</string>
+    <string name="auto_login_user_ID">个人身份证 :&#160;</string>
+    <string name="auto_login_title">自动登录</string>
+    <string name="auto_login_text">您已经登录到crewcloud服务。您要使用上述帐户登录吗？</string>
+
+    <string name="permission_denied">权限被拒绝</string>
+
+    <!-- PIN ACTIVITY -->
+    <string name="pin_title_1">密码设定</string>
+    <string name="pin_title_2">删除密码</string>
+    <string name="pin_title_3">修改密码</string>
+    <string name="pin_title_4">输入密码</string>
+
+    <string name="pin_instruction_1_1">请输入密码</string>
+    <string name="pin_instruction_1_2">请再次输入密码</string>
+    <string name="pin_instruction_2_1">请输入密码</string>
+    <string name="pin_instruction_3_1">请输入一个有效的密码</string>
+    <string name="pin_instruction_3_2">请输入密码.</string>
+    <string name="pin_instruction_3_3">请再次输入密码.</string>
+    <string name="pin_instruction_4_1">请输入密码.</string>
+
+    <string name="pin_instruction_error">密码无效.请再输入一次.</string>
+
+
+    <string name="navigation_drawer_open">打开海军独木舟线</string>
+    <string name="navigation_drawer_close">海军电缆关闭</string>
+
+    <string name="action_settings">设置</string>
+
+
+    <string name="no_network_error">无法连接到服务器.</string>
+
+    <string name="password">密码</string>
+
+    <string name="loading_title">载入中...</string>
+    <string name="loading_content">잠시만请稍等.</string>
+
+    <string name="login_empty_input">%s请输入.</string>
+
+    <string name="yes">好啦</string>
+    <string name="no">取消</string>
+    <string name="exception_error">由于异常而无法获取数据</string>
+    <string name="favorite">收藏夹</string>
+    <string name="default_box">我的邮箱</string>
+    <string name="tagged_mail">标签邮箱</string>
+
+    <!--16/12/2015-->
+    <string name="string_title_compose_email">写邮件</string>
+    <string name="string_title_mail_create_from">来自</string>
+    <string name="string_title_mail_create_to">到</string>
+    <string name="string_title_mail_create_cc">见</string>
+    <string name="string_title_mail_create_bcc">密件抄送</string>
+    <string name="string_title_mail_create_subject">职称</string>
+    <string name="string_title_mail_create_attach_name">DaZone Tech file.zip</string>
+    <string name="string_title_mail_create_attach_size">(20MB)</string>
+    <!--18/12/2015-->
+    <string name="string_title_mail_create_ok">好啦</string>
+    <string name="string_title_mail_create_cancel">取消</string>
+    <string name="string_title_mail_create_error">未输入收件人的电子邮件地址.</string>
+    <string name="more">更多资讯</string>
+    <string name="delete">删掉</string>
+    <string name="check_all">全面检查</string>
+    <string name="set_unread">未读邮件</string>
+    <string name="move_to">搬家</string>
+
+    <!--21/12/2015-->
+    <string name="string_title_mail_detail_date">日期</string>
+    <string name="search">搜寻</string>
+
+    <!--22/12/2015-->
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="update_data_error">我发现了一个意外的问题.</string>
+
+    <!--23/12/2015-->
+
+    <string name="string_mail_create_quote">包含原文</string>
+    <string name="string_success">邮件状态更改完成</string>
+    <string name="string_alert_delete_mail">您确定要删除此消息吗？</string>
+    <string name="string_alert_download_mail">您要下载附件吗？</string>
+    <string name="string_alert_download_mail_again">Do you want to download this file again?</string>
+    <string name="mark_as_important">添加重要消息</string>
+    <string name="mark_not_important">重要邮件发布</string>
+    <string name="deleting">删除中....</string>
+    <string name="logout">登出</string>
+    <string name="download_again">Download</string>
+    <string name="open_file">Open</string>
+
+    <string name="string_update_content">存在最新版本.\n您要更新吗？</string>
+
+
+    <string name="wating_app_download">正在下载文件. 请稍等</string>
+    <string name="company">公司名称</string>
+
+    <!--29/12/2015-->
+    <string name="string_alert_send_mail_fail">我无法发送邮件. 请稍候，我们正在上传您的文件.</string>
+
+    <!--30/12/2015-->
+    <string name="string_title_mail_detail_reply">回覆</string>
+    <string name="string_title_mail_detail_reply_all">全部回覆</string>
+    <string name="string_title_mail_detail_forward">传达</string>
+    <string name="string_title_mail_send">发送</string>
+
+    <string name="string_alert_send_mail_success">您的邮件已发送.</string>
+    <string name="moving">在移动中…</string>
+
+
+    <!--6/1/2016-->
+    <string name="string_title_mail_detail_resend">重新发送</string>
+
+    <!--7/1/2016-->
+
+    <!--8/1/2016-->
+    <string name="string_title_mail_from_address">发送地址</string>
+    <string name="string_title_mail_sender_name">来自</string>
+
+    <!--11/1/2016-->
+    <string name="string_title_menu_name">来自</string>
+    <string name="string_title_menu_to">到</string>
+    <string name="string_title_menu_title">职称</string>
+    <string name="string_title_menu_reg_date">收到日期</string>
+    <string name="string_title_menu_size">尺码</string>
+    <string name="string_title_menu_important">重要性</string>
+    <string name="string_title_menu_read">读取日期</string>
+    <string name="string_title_menu_file">文件数</string>
+    <!--12/1/2016-->
+    <string name="string_title_menu_inbox">所有邮箱</string>
+    <string name="string_title_menu_sortbox">收件箱</string>
+    <string name="string_title_menu_outbox">已寄出邮件</string>
+    <string name="string_title_mail_no_tag">无</string>
+
+    <!--13/1/2016-->
+    <string name="string_title_menu_none">无</string>
+
+    <!--14/1/2016-->
+    <string name="menu_save_pdf">保存到 Pdf</string>
+
+    <!--18/1/2016-->
+
+    <!--19/1/2016-->
+    <string name="string_today">今天</string>
+    <string name="string_yesterday">昨天</string>
+    <string name="string_this_month">这个月</string>
+    <string name="last_month">上个月</string>
+    <!--21/1/2016-->
+
+    <!--22/1/2016-->
+    <string name="string_save_draft">临时存放</string>
+    <string name="string_delete_draft">删除草稿</string>
+    <string name="string_title_menu_unread_box">​​未读邮件</string>
+    <string name="string_title_menu_reserved">保留邮箱</string>
+    <string name="string_title_select_box">选择邮箱</string>
+
+    <!--25/1/2016-->
+    <string name="string_no_id">当前没有正在使用的邮件帐户!</string>
+
+    <string name="connection_falsed">我无法访问高位地址.</string>
+
+    <!--26/1/2016-->
+    <string name="string_no_data">没有资料.</string>
+    <string name="string_move_to_success">完成移动邮件</string>
+    <string name="string_move_to_fail">无法移动邮件</string>
+    <string name="string_company_id">组号</string>
+
+    <!--27/1/2016-->
+    <string name="menu_tag">标签</string>
+    <string name="string_title_menu_draft_box">草稿</string>
+    <string name="string_title_filter_fail">邮件过滤器设置失败</string>
+    <string name="string_title_filter_success">完整的邮件过滤器设置</string>
+    <string name="string_update_fail">更新失败</string>
+
+    <!--29/1/2016-->
+    <string name="string_discard_draft">删除草稿</string>
+
+    <!--1/2/2016-->
+    <string name="string_lost_subjet">未输入主题.</string>
+    <string name="string_not_subjet">没有邮件主题.</string>
+    <string name="string_not_name">没有邮件名称.</string>
+
+    <!--3/2/2016-->
+    <string name="string_notice_sent_error">我无法取消发送此电子邮件.</string>
+    <string name="string_notice_sent_error_select">请选择取消信息.</string>
+    <string name="string_confirm">致谢</string>
+    <string name="string_cancel_sent">没有可以取消的邮件。</string>
+    <string name="string_cancel_sent_for_all">您确定要取消所有内部邮件吗？无法取消收件人已经验证的邮件.</string>
+
+    <!--5/2/2016-->
+    <string name="string_email_error_new">电子邮件格式不正确。 请编辑信息。</string>
+
+    <!--15/2/2016-->
+    <!--17/10/2016-->
+    <string name="the_new_mail_has_arrived">新邮件到达.</string>
+    <string name="are_you_sure_loguot">您要登出吗？</string>
+    <string name="date_sent">发送日期</string>
+    <string name="remove_passcode">删除密码</string>
+
+    <string name="about">邮件信息</string>
+    <string name="user_version">用户版本</string>
+    <string name="confirm">好啦</string>
+    <string name="no_data">没有资料</string>
+    <string name="cancle_draft">取消</string>
+    <string name="yes_draft">保存到</string>
+    <string name="content_draft">您是否要将更改保存到“草稿”？</string>
+    <string name="string_alert_save_mail_success">邮件保存成功。</string>
+    <string name="company_phone">公司联系方式</string>
+    <string name="date_of_entry">参加日期</string>
+    <string name="birth_day">生日</string>
+    <string name="password_change">修改密码</string>
+    <string name="change_text">改变</string>
+    <string name="txt_ask_to_save">无法发送邮件. 您要保存吗？互联网连接后，系统会自动发送</string>
+    <string name="open_draff_mail">在Mail应用程序上发送邮件并保存草稿附加标签或图片的情况将会丢失。 你想继续吗?</string>
+</resources>

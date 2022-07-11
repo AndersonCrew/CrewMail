@@ -1,0 +1,272 @@
+﻿<resources>
+    <string name="app_name">크루메일</string>
+
+    <string name="mailActivity_message_download_apk">설치 파일을 다운로드 중입니다.\n잠시만 기다려주세요.</string>
+    <string name="loginActivity_message_wrong_server_site">서버에 접속할 수 없습니다.</string>
+
+    <!-- Login screen -->
+    <string name="string_server_site">단체(회사) 아이디</string>
+    <string name="login_username">개인 아이디</string>
+    <string name="login_password">비밀번호</string>
+    <string name="string_sign_up">새로운 단체(회사) 생성</string>
+    <string name="login_login">로그인</string>
+    <!-- Sign Up screen -->
+    <string name="sign_up_suggest">단체(회사) 아이디가 아직 없으신가요?</string>
+    <string name="enter_your_email">메일 주소</string>
+    <string name="register">발송</string>
+    <string name="sign_up_note">메일 주소를 입력해주세요.</string>
+    <string name="sign_up_note2">입력하신 메일 주소로 크루클라우드에 단체(회사) 생성을 할 수 있는 링크를 보내 드리겠습니다.</string>
+    <string name="title_sign_up_screen">단체(회사) 생성</string>
+    <string name="current_password">현재 비밀번호</string>
+    <string name="new_password">새 비밀번호</string>
+    <string name="confirm_password">비밀번호 확인</string>
+    <string name="change_password">비밀번호 변경</string>
+
+
+    <string name="save">저장</string>
+
+    <!-- TIME PICKER -->
+    <string name="time_picker_title">Select Time</string>
+
+    <!-- DIALOG -->
+
+    <!-- SETTING -->
+    <string name="profle">내정보</string>
+    <string name="setting_general">크루메일 설정</string>
+    <string name="setting_notification">알림 설정</string>
+    <string name="setting_general_download_path_label">다운로드 경로</string>
+    <string name="setting_general_download_path_default">/storage/CrewMail/download/</string>
+    <string name="setting_general_set_password_code">암호 설정</string>
+    <string name="setting_general_change_password_code">암호 변경</string>
+    <string name="setting_general_adjust_to_screen_width">화변 너비에 맞춰 보기</string>
+    <string name="setting_notification_new_mail">알림 설정</string>
+    <string name="setting_notification_method_label">알림</string>
+    <string name="setting_notification_sound">소리</string>
+    <string name="setting_notification_vibrate">진동</string>
+    <string name="setting_notification_time_label">알림 시간</string>
+    <string name="setting_notification_time">알림 시간 사용</string>
+    <string name="setting_notification_time_2">* 설정된 시간에만 알림을 받을 수 있습니다.</string>
+    <string name="setting_notification_from_time">AM 08:00</string>
+    <string name="setting_notification_to_time">PM 19:00</string>
+    <string name="setting_notification_time_error">End time must be bigger than start time.</string>
+    <string name="personal_id">사용자 아이디</string>
+    <string name="email">이메일</string>
+    <string name="company_name">단체 이름</string>
+    <string name="phone">휴대폰</string>
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">예</string>
+    <string name="auto_login_button_no">아니오</string>
+    <string name="auto_login_company_ID">단체 아이디 :&#160;</string>
+    <string name="auto_login_user_ID">개인 아이디 :&#160;</string>
+    <string name="auto_login_title">자동 로그인</string>
+    <string name="auto_login_text">이미 크루클라우드 서비스에 로그인중이십니다.​ 위 계정으로 로그인하시겠습니까?</string>
+
+    <string name="permission_denied">Permission Denied</string>
+
+    <!-- PIN ACTIVITY -->
+    <string name="pin_title_1">암호 설정</string>
+    <string name="pin_title_2">암호 제거</string>
+    <string name="pin_title_3">암호 변경</string>
+    <string name="pin_title_4">암호 입력</string>
+
+    <string name="pin_instruction_1_1">암호를 입력해주세요.</string>
+    <string name="pin_instruction_1_2">암호를 다시 입력해주세요.</string>
+    <string name="pin_instruction_2_1">암호를 입력해주세요.</string>
+    <string name="pin_instruction_3_1">설정되어 있는 암호를 입력해주세요.</string>
+    <string name="pin_instruction_3_2">암호를 입력해주세요.</string>
+    <string name="pin_instruction_3_3">암호를 다시 입력해주세요.</string>
+    <string name="pin_instruction_4_1">암호를 입력해주세요.</string>
+
+    <string name="pin_instruction_error">잘못된 암호입니다. 다시 입력해주세요.</string>
+
+
+    <string name="navigation_drawer_open">네이비케이선 열기</string>
+    <string name="navigation_drawer_close">네이비케이선 닫기</string>
+
+    <string name="action_settings">설정</string>
+
+
+    <string name="no_network_error">서버에 접속할 수 없습니다.</string>
+
+    <string name="password">비밀번호</string>
+
+    <string name="loading_title">로딩중...</string>
+    <string name="loading_content">잠시만 기다리세요.</string>
+
+    <string name="login_empty_input">%s를 입력해주세요.</string>
+
+    <string name="yes">확인</string>
+    <string name="no">취소</string>
+    <string name="exception_error">Can\'t get data because of exception</string>
+    <string name="favorite">즐겨찾기</string>
+    <string name="default_box">내 메일함</string>
+    <string name="tagged_mail">태그 메일함</string>
+
+    <!--16/12/2015-->
+    <string name="string_title_compose_email">메일 쓰기</string>
+    <string name="string_title_mail_create_from">보내는사람</string>
+    <string name="string_title_mail_create_to">받는사람</string>
+    <string name="string_title_mail_create_cc">참조</string>
+    <string name="string_title_mail_create_bcc">숨은참조</string>
+    <string name="string_title_mail_create_subject">제목</string>
+    <string name="string_title_mail_create_attach_name">DaZone Tech file.zip</string>
+    <string name="string_title_mail_create_attach_size">(20MB)</string>
+    <!--18/12/2015-->
+    <string name="string_title_mail_create_ok">확인</string>
+    <string name="string_title_mail_create_cancel">취소</string>
+    <string name="string_title_mail_create_error">받는사람의 메일 주소를 입력 되지 않았습니다.</string>
+    <string name="more">더 보기</string>
+    <string name="delete">삭제</string>
+    <string name="check_all">전체 체크</string>
+    <string name="set_unread">읽지 않은 메일</string>
+    <string name="move_to">이동</string>
+
+    <!--21/12/2015-->
+    <string name="string_title_mail_detail_date">날짜</string>
+    <string name="search">검색</string>
+
+    <!--22/12/2015-->
+    <string name="today">오늘</string>
+    <string name="yesterday">어제</string>
+    <string name="update_data_error">예상 못하는 문제 발견했습니다.</string>
+
+    <!--23/12/2015-->
+
+    <string name="string_mail_create_quote">원문내용 포함</string>
+    <string name="string_success">메일상태변경 완료</string>
+    <string name="string_alert_delete_mail">메일을 삭제하시겠습니까?</string>
+    <string name="string_alert_download_mail">첨부 파일을 다운로드 하겠습니까?</string>
+    <string name="string_alert_download_mail_again">파일 이름 존재합니다. 새로운 파일을 다운로드 하시겠습니까?</string>
+    <string name="mark_as_important">중요한 메일 추가</string>
+    <string name="mark_not_important">중요한 메일 해제</string>
+    <string name="deleting">삭제중....</string>
+    <string name="logout">로그아웃</string>
+
+    <string name="string_update_content">최신버전이 존재합니다. 최신버전으로 업데이트 하시길 바랍니다</string>
+
+
+    <string name="wating_app_download"> 파일을 다운로드 진행중입니다. 잠시만 기다리주세요</string>
+    <string name="company">회사</string>
+
+    <string name="download_again">다운로드</string>
+    <string name="open_file">파일보기</string>
+
+    <!--29/12/2015-->
+    <string name="string_alert_send_mail_fail">메일을 못 보냈습니다.  파일을 업로드 하는중이라서 잠시만 기다리세요.</string>
+
+    <!--30/12/2015-->
+    <string name="string_title_mail_detail_reply">답장</string>
+    <string name="string_title_mail_detail_reply_all">전체답장</string>
+    <string name="string_title_mail_detail_forward">전달</string>
+    <string name="string_title_mail_send">보내기</string>
+
+    <string name="string_alert_send_mail_success">메일 발송이 완료되었습니다.</string>
+    <string name="moving">이동 중…</string>
+
+
+    <!--6/1/2016-->
+    <string name="string_title_mail_detail_resend">다시발송</string>
+
+    <!--7/1/2016-->
+
+    <!--8/1/2016-->
+    <string name="string_title_mail_from_address">보낸주소</string>
+    <string name="string_title_mail_sender_name">보낸사람</string>
+
+    <!--11/1/2016-->
+    <string name="string_title_menu_name">보낸사람</string>
+    <string name="string_title_menu_to">받는사람</string>
+    <string name="string_title_menu_title">제목</string>
+    <string name="string_title_menu_reg_date">받은 날짜</string>
+    <string name="string_title_menu_size">크기</string>
+    <string name="string_title_menu_important">중요성</string>
+    <string name="string_title_menu_read">읽은날짜</string>
+    <string name="string_title_menu_file">파일개수</string>
+    <!--12/1/2016-->
+    <string name="string_title_menu_inbox">전체메일함</string>
+    <string name="string_title_menu_sortbox">받은메일함</string>
+    <string name="string_title_menu_outbox">보낸메일함</string>
+    <string name="string_title_mail_no_tag">없음</string>
+
+    <!--13/1/2016-->
+    <string name="string_title_menu_none">없음</string>
+
+    <!--14/1/2016-->
+    <string name="menu_save_pdf">Save Pdf</string>
+
+    <!--18/1/2016-->
+
+    <!--19/1/2016-->
+    <string name="string_today">오늘</string>
+    <string name="string_yesterday">어제</string>
+    <string name="string_this_month">이번달</string>
+    <string name="last_month">지난달</string>
+    <!--21/1/2016-->
+
+    <!--22/1/2016-->
+    <string name="string_save_draft">임시 저장</string>
+    <string name="string_delete_draft">임시 저장 삭제</string>
+    <string name="string_title_menu_unread_box">읽지 않은 메일​​</string>
+    <string name="string_title_menu_reserved">예약메일함</string>
+    <string name="string_title_select_box">메일함 선택</string>
+
+    <!--25/1/2016-->
+    <string name="string_no_id">현재 사용중인 메일 계정이 없습니다!</string>
+
+    <string name="connection_falsed">윗주소 접속 못 했습니다.</string>
+
+    <!--26/1/2016-->
+    <string name="string_no_data">데이터가 없습니다.</string>
+    <string name="string_move_to_success">메일을 이동 완료</string>
+    <string name="string_move_to_fail">메일을 이동 실패</string>
+    <string name="string_company_id">단체 아이디</string>
+
+    <!--27/1/2016-->
+    <string name="menu_tag">태그</string>
+    <string name="string_title_menu_draft_box">임시보관함</string>
+    <string name="string_title_filter_fail">메일 필터 설정 실패</string>
+    <string name="string_title_filter_success">메일 필터 설정 완료</string>
+    <string name="string_update_fail">업데이트 실패</string>
+
+    <!--29/1/2016-->
+    <string name="string_discard_draft">임시 저장 삭제</string>
+
+    <!--1/2/2016-->
+    <string name="string_lost_subjet">제목이 입력되지 않았습니다.</string>
+    <string name="string_not_subjet">메일 제목이 없습니다.</string>
+    <string name="string_not_name">메일의 이름 없습니다.</string>
+
+    <!--3/2/2016-->
+    <string name="string_notice_sent_error">이 메일을 발송 취소할 수 없습니다.</string>
+    <string name="string_notice_sent_error_select">발송 취소 메일을 선택하세요.</string>
+    <string name="string_confirm">수신 확인</string>
+    <string name="string_cancel_sent">발송 취소할 수 있는 메일이 없습니다.</string>
+    <string name="string_cancel_sent_for_all">모두 내부 메일을 발송 취소하세겠습니까? 이미 수신자가 확인한 메일을 취소할 수 없습니다.</string>
+
+    <!--5/2/2016-->
+    <string name="string_email_error_new">받는사람 메일 주소를 잘 못 입력했습니다. 다시 확인해주세요.</string>
+
+    <!--15/2/2016-->
+    <!--17/10/2016-->
+    <string name="the_new_mail_has_arrived">새로운 메일이 도착했습니다.</string>
+    <string name="are_you_sure_loguot">로그아웃 하시겠습니까?</string>
+    <string name="date_sent">보낸 날짜</string>
+    <string name="remove_passcode">암호를 제거</string>
+
+    <string name="about">크루메일 정보</string>
+    <string name="user_version">사용자 버젼</string>
+    <string name="confirm">확인</string>
+    <string name="no_data">데이터가 없습니다</string>
+    <string name="cancle_draft">취소</string>
+    <string name="yes_draft">저장</string>
+    <string name="content_draft">변경된 내용을 "임시보관함"에 저장하시겠습니까?</string>
+    <string name="string_alert_save_mail_success">Mail save success.</string>
+    <string name="company_phone">회사연락처</string>
+    <string name="date_of_entry">입사일</string>
+    <string name="birth_day">생일</string>
+    <string name="password_change">비밀번호 변경</string>
+    <string name="change_text">Change</string>
+    <string name="txt_ask_to_save">메일을 보낼 수 없습니다. 저장 하시겠습니까? 인터넷 연결이있을 때 시스템에서 자동으로 전송합니다.</string>
+    <string name="open_draff_mail">메일 앱에서 [보내기]및 [저장]을 하실경우, 테그나 이미지가 삭제됩니다. 그래도 다시 쓰기를 하시겠니까?</string>
+</resources>

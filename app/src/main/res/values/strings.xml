@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">CrewMail</string>
+
+    <string name="mailActivity_message_download_apk">설치 파일을 다운로드 중입니다.\n잠시만 기다려주세요.</string>
+    <string name="loginActivity_message_wrong_server_site">서버에 접속할 수 없습니다.</string>
+
+    <!-- Login screen -->
+    <string name="string_server_site">Group(Company) ID</string>
+    <string name="login_username">Personal ID</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Log In</string>
+    <string name="string_sign_up">Create a new Group(Company)</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+
+    <!-- Sign Up screen -->
+    <string name="sign_up_suggest">Haven\'t you your Group(Company) ID yet?</string>
+    <string name="enter_your_email">Mail address</string>
+    <string name="register">Send</string>
+    <string name="sign_up_note">Enter your mail address.</string>
+    <string name="sign_up_note2">We will send a link to create a new group(company) on CrewCloud.</string>
+    <string name="title_sign_up_screen">Create a new Group(Company)</string>
+
+
+    <string name="save">Save</string>
+
+    <!-- TIME PICKER -->
+    <string name="time_picker_title">Select Time</string>
+
+    <!-- DIALOG -->
+
+    <!-- SETTING -->
+    <string name="profle">My Profile</string>
+    <string name="setting_general">CrewMail Settings</string>
+    <string name="setting_notification">Notification Settings</string>
+    <string name="setting_general_download_path_label">Download Path</string>
+    <string name="setting_general_download_path_default">/storage/CrewMail/download/</string>
+    <string name="setting_general_set_password_code">Set Passcode</string>
+    <string name="setting_general_change_password_code">Change Passcode</string>
+    <string name="setting_general_adjust_to_screen_width">Adjust to Screen Width</string>
+    <string name="personal_id">PERSONAL ID</string>
+    <string name="email">EMAIL</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="phone">Cell Phone</string>
+    <string name="setting_notification_new_mail">Notification Settings</string>
+    <string name="setting_notification_method_label">Notification</string>
+    <string name="setting_notification_sound">Sound</string>
+    <string name="setting_notification_vibrate">Vibration</string>
+    <string name="setting_notification_time_label">Notification time</string>
+    <string name="setting_notification_time">Enable Notification time</string>
+    <string name="setting_notification_time_2">* You can receive notifications only at the times that are set.</string>
+    <string name="setting_notification_from_time">AM 08:00</string>
+    <string name="setting_notification_to_time">PM 19:00</string>
+    <string name="setting_notification_time_error">End time must be bigger than start time.</string>
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">Yes</string>
+    <string name="auto_login_button_no">No</string>
+    <string name="auto_login_company_ID">Group ID&#160;&#160;&#160;&#160;&#160;&#160;:&#160;</string>
+    <string name="auto_login_user_ID">Personal ID&#160;:&#160;</string>
+    <string name="auto_login_title">Auto Login</string>
+    <string name="auto_login_text">You have already logged in to CrewCloud service.​ Would you log in as the above account?​</string>
+
+    <string name="permission_denied">Permission Denied</string>
+
+    <!-- PIN ACTIVITY -->
+    <string name="pin_title_1">Set Passcode</string>
+    <string name="pin_title_2">Remove Passcode</string>
+    <string name="pin_title_3">Change Passcode</string>
+    <string name="pin_title_4">Input Passcode</string>
+    <string name="pin_instruction_1_1">Please enter your passcode.</string>
+    <string name="pin_instruction_1_2">Please enter your passcode again.</string>
+    <string name="pin_instruction_2_1">Please enter your passcode.</string>
+    <string name="pin_instruction_3_1">Please enter your current passcode.</string>
+    <string name="pin_instruction_3_2">Please enter your passcode.</string>
+    <string name="pin_instruction_3_3">Please enter your passcode again.</string>
+    <string name="pin_instruction_4_1">Please enter your passcode.</string>
+
+    <string name="pin_instruction_error">The passcode is incorrect.Please try again.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="no_network_error">Can Not Connect To Server</string>
+
+    <string name="password">Password</string>
+
+    <string name="loading_title">Loading...</string>
+    <string name="loading_content">Please wait.</string>
+
+    <string name="login_empty_input">%s cannot be empty</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exception_error">Can\'t get data because of exception</string>
+    <string name="favorite">Favorite</string>
+    <string name="default_box">My mail</string>
+    <string name="tagged_mail">Tagged mails</string>
+
+    <!--16/12/2015-->
+    <string name="string_title_compose_email">Compose Email</string>
+    <string name="string_title_mail_create_from">From</string>
+    <string name="string_title_mail_create_to">To</string>
+    <string name="string_title_mail_create_cc">Cc</string>
+    <string name="string_title_mail_create_bcc">Bcc</string>
+    <string name="string_title_mail_create_subject">Subject</string>
+    <string name="string_title_mail_create_attach_name">dazone tech file crew_time card and crew note and crew mail.zip</string>
+    <string name="string_title_mail_create_attach_size">(20MB)</string>
+    <!--18/12/2015-->
+    <string name="string_title_mail_create_ok">OK</string>
+    <string name="string_title_mail_create_cancel">Cancel</string>
+    <string name="string_title_mail_create_error">You need to input To address information.</string>
+    <string name="more">More</string>
+    <string name="delete">Delete</string>
+    <string name="check_all">Check all</string>
+    <string name="set_unread">Set unread</string>
+    <string name="move_to">Move to</string>
+    <!--21/12/2015-->
+    <string name="string_title_mail_detail_date">Date</string>
+    <string name="search">Search</string>
+
+    <!--22/12/2015-->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="update_data_error">Update error due to unexpected reason</string>
+
+    <!--23/12/2015-->
+    <string name="string_mail_create_quote">Quotes</string>
+    <string name="string_success">Update data success</string>
+    <string name="string_alert_delete_mail">Are you remove this email?</string>
+    <string name="string_alert_download_mail">Do you want to download this file?</string>
+    <string name="string_alert_download_mail_again">Do you want to download this file again?</string>
+    <string name="mark_as_important">Mark as important</string>
+    <string name="mark_not_important">Mark not important</string>
+    <string name="deleting">Deleting....</string>
+    <string name="logout">Log out</string>
+
+    //register 28/12/2015 update version
+    <string name="string_update_content">Please update the newest version!</string>
+
+
+    <!--29/12/2015-->
+    <string name="string_alert_send_mail_fail">This mail not send. File is uploading Please waiting.</string>
+    <string name="string_alert_send_mail_success">Mail send success.</string>
+
+    <string name="wating_app_download">File downloading, please wait </string>
+
+    <!--30/12/2015-->
+    <string name="string_title_mail_detail_reply">Reply</string>
+    <string name="string_title_mail_detail_reply_all">Reply All</string>
+    <string name="string_title_mail_detail_forward">Forward</string>
+    <string name="string_title_mail_send">Send</string>
+    <string name="company">Company</string>
+    <string name="moving">Moving...</string>
+
+    <!--6/1/2016-->
+    <string name="string_title_mail_detail_resend">ReSend</string>
+
+    <!--7/1/2016-->
+
+    <!--8/1/2016-->
+    <string name="string_title_mail_from_address">From Address</string>
+    <string name="string_title_mail_sender_name">Sender\'s Name</string>
+
+    <!--11/1/2016-->
+    <string name="string_title_menu_name">From Name</string>
+    <string name="string_title_menu_to">To</string>
+    <string name="string_title_menu_title">Title</string>
+    <string name="string_title_menu_reg_date">Date Received</string>
+    <string name="string_title_menu_size">Size</string>
+    <string name="string_title_menu_important">Important</string>
+    <string name="string_title_menu_read">Read Date</string>
+    <string name="string_title_menu_file">File Count</string>
+
+    <!--12/1/2016-->
+    <string name="string_title_menu_inbox">In Box</string>
+    <string name="string_title_menu_sortbox">Sorted Mails</string>
+    <string name="string_title_menu_outbox">Out Box</string>
+    <string name="string_title_mail_no_tag">No Tag</string>
+
+    <!--13/1/2016-->
+    <string name="string_title_menu_none">None</string>
+
+    <!--14/1/2016-->
+
+    <!--15/1/2016-->
+    <string name="menu_save_pdf">Save Pdf</string>
+
+    <!--18/1/2016-->
+
+    <!--19/1/2016-->
+    <string name="string_today">Today</string>
+    <string name="string_yesterday">Yesterday</string>
+    <string name="string_this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+
+    <!--21/1/2016-->
+
+    <!--22/1/2016-->
+    <string name="string_save_draft">Save Draft</string>
+    <string name="string_delete_draft">Delete Draft</string>
+    <string name="string_title_menu_unread_box">Unread Mails</string>
+    <string name="string_title_menu_reserved">Reserved Box</string>
+    <string name="string_title_select_box">Select mails box</string>
+
+    <!--25/1/2016-->
+    <string name="string_no_id">Currently, you do not have this email account.</string>
+
+    <string name="connection_falsed">Can not connect the above address </string>
+
+    <!--26/1/2016-->
+    <string name="string_no_data">No Data</string>
+    <string name="string_move_to_success">Move mail success.</string>
+    <string name="string_move_to_fail">Move mail fail.</string>
+    <string name="string_company_id">Company ID</string>
+
+
+    <!--27/1/2016-->
+    <string name="menu_tag">Tag</string>
+    <string name="string_title_menu_draft_box">Draft Box</string>
+    <string name="string_title_filter_fail">Config mail filter fail</string>
+    <string name="string_title_filter_success">Config mail filter success</string>
+    <string name="string_update_fail">Update fail.</string>
+
+    <!--29/1/2016-->
+    <string name="string_discard_draft">Discard Draft</string>
+
+    <!--1/2/2016-->
+    <string name="string_lost_subjet">You must input email subject.</string>
+    <string name="string_not_subjet">Not have email subject</string>
+    <string name="string_not_name">Not have email name</string>
+
+    <!--3/2/2016-->
+    <string name="string_notice_sent_error">Can not cancels the action of send/reservation mail this email.</string>
+    <string name="string_notice_sent_error_select">Please select the mail to cancel.</string>
+    <string name="string_confirm">Confirm Email</string>
+    <string name="string_cancel_sent">Now, all this email can not cancels the action of send/reservation email.</string>
+    <string name="string_cancel_sent_for_all">Are you sure to cancel all the internal email. Mail already seen by the To box not be canceled.</string>
+
+    <!--5/2/2016-->
+    <string name="string_email_error_new">The format of email is incorect. Please edit the information.</string>
+
+    <!--15/2/2016-->
+
+    <!--17/10/2016-->
+    <string name="the_new_mail_has_arrived">The new mail has arrived.</string>
+    <string name="are_you_sure_loguot">Are you sure you want to logout?</string>
+    <string name="date_sent">Date Sent</string>
+    <string name="remove_passcode">Remove Passcode</string>
+
+    <string name="about">About CrewMail</string>
+    <string name="user_version">User Version</string>
+    <string name="confirm">Confirm</string>
+    <string name="no_data">No Data</string>
+    <string name="cancle_draft">Cancle</string>
+    <string name="yes_draft">Save</string>
+    <string name="content_draft">Do you want to save the changes in your draft mailbox?</string>
+    <string name="string_alert_save_mail_success">Mail save success.</string>
+    <string name="company_phone">Company Phone</string>
+    <string name="date_of_entry">Date of Employment</string>
+    <string name="birth_day">Birthday</string>
+    <string name="password_change">Password Change</string>
+    <string name="change_text">Change</string>
+    <string name="txt_ask_to_save">Could not send mail. Do you want to save? The system will automatically send when there is an internet connection</string>
+    <string name="open_draff_mail">The situation on Mail app of sending mail and saving draft attached tag or picture will be losed. Do you want to continue?</string>
+    <string name="download_again">Download</string>
+    <string name="open_file">Open</string>
+    <string name="organization_chart">Organization</string>
+</resources>

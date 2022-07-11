@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_mail_wrapper"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/btn_press_gray"
+              android:orientation="vertical">
+    <include layout="@layout/mail_list_month_item"/>
+
+    <RelativeLayout
+        android:id="@+id/relMailListMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:padding="@dimen/dimen_10_20">
+
+        <ImageView
+            android:id="@+id/item_mail_avatar"
+            style="@style/default_avatar_45dp"
+            android:contentDescription="@null"
+            android:src="@null" />
+
+        <ImageView
+            android:id="@+id/item_mail_iv_unread"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@+id/item_mail_avatar"
+            android:background="@drawable/circle_red"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_mail_avatar_check"
+            style="@style/default_avatar_45dp"
+            android:alpha="0"
+            android:background="@drawable/circle_trans_blue"
+            android:contentDescription="@null"
+            android:padding="@dimen/dimen_8_16"
+            android:src="@drawable/list_check_choose_ic" />
+
+        <LinearLayout
+            android:id="@+id/item_mail_name_wrapper"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dimen_5_10"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_mail_iv_unread"
+            android:layout_toRightOf="@+id/item_mail_iv_unread"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_mail_name"
+                    style="@style/text_16sp_black"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="name ffffffffffooo" />
+
+                <LinearLayout
+                    android:id="@+id/mainReadDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_1_2"
+                    android:layout_marginRight="@dimen/dimen_1_2"
+                    android:background="@color/color_mail_attach_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16_32"
+                        android:layout_height="@dimen/dimen_20_40"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/dimen_3_6"
+                        android:paddingRight="@dimen/dimen_1_2"
+                        android:src="@drawable/login_username" />
+
+                    <TextView
+                        android:id="@+id/item_mail_txt_read_date"
+                        style="@style/text_13sp_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/dimen_3_6"
+                        android:text="12/12"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_mail_status"
+                style="@style/text_13sp_gray"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/item_mail_date"
+                style="@style/text_13sp_gray"
+                android:layout_gravity="center"
+                android:text="2015-11-20 09:20 am" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_mail_linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_10"
+            android:layout_below="@+id/item_mail_name_wrapper"
+            android:layout_toEndOf="@+id/item_mail_iv_unread"
+            android:layout_toRightOf="@id/item_mail_iv_unread">
+
+            <TextView
+                android:id="@+id/item_mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_13_25" />
+
+            <ImageView
+                android:id="@+id/item_mail_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5_10"
+                android:layout_toRightOf="@+id/item_mail_title"
+                android:src="@drawable/list_attach_ic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_10"
+            android:layout_below="@+id/item_mail_linear_title"
+            android:layout_toEndOf="@+id/item_mail_iv_unread"
+            android:layout_toRightOf="@+id/item_mail_iv_unread"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mail_content"
+                style="@style/text_13sp_gray"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/item_mail_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/sidebar_ic_tag_02"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/item_mail_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5_10"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:src="@drawable/list_star_white_ic"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/border"/>
+</LinearLayout>

@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">Crewmail</string>
+
+    <string name="mailActivity_message_download_apk">설치 파일을 다운로드 중입니다.\n잠시만 기다려주세요.</string>
+    <string name="loginActivity_message_wrong_server_site">서버에 접속할 수 없습니다.</string>
+
+    <!-- LOGIN SCREEN -->
+    <string name="string_server_site">ID Tổ chức(Công ty)</string>
+    <string name="login_username">ID cá nhân</string>
+    <string name="login_password">Mật khẩu</string>
+    <string name="login_login">Đăng nhập</string>
+    <string name="string_sign_up">Tạo tổ chức(công ty) mới</string>
+    <!-- SIGN UP SCREEN -->
+    <string name="sign_up_suggest">Bạn chưa có ID tổ chức(công ty)?</string>
+    <string name="enter_your_email">Địa chỉ mail</string>
+    <string name="register">Gửi</string>
+    <string name="sign_up_note">Vui lòng nhập địa chỉ mail</string>
+    <string name="sign_up_note2">Chúng tôi sẽ gửi link để bạn có thể tạo cho mình một tổ chức(công ty) mới trên CrewCloud.</string>
+    <string name="title_sign_up_screen">Tạo tổ chức(công ty) mới</string>
+    <string name="current_password">Mật Khẩu Hiện Tại</string>
+    <string name="new_password">Mật Khẩu Mới</string>
+    <string name="confirm_password">Xác Nhận Mật Khẩu</string>
+    <string name="change_password">Thay Đổi Mật Khẩu</string>
+    <string name="save">Lưu</string>
+
+    <!-- TIME PICKER -->
+    <string name="time_picker_title">Select Time</string>
+
+    <!-- DIALOG -->
+
+    <!-- SETTING -->
+    <string name="profle">Thông tin của tôi</string>
+    <string name="setting_general">Cài đặt CrewMail</string>
+    <string name="setting_notification">Cài đặt thông báo</string>
+    <string name="setting_general_download_path_label">Download Path</string>
+    <string name="setting_general_download_path_default">/storage/CrewMail/download/</string>
+    <string name="setting_general_set_password_code">Set Passcode</string>
+    <string name="setting_general_change_password_code">Change Passcode</string>
+    <string name="setting_general_adjust_to_screen_width">Adjust to Screen Width</string>
+
+    <string name="setting_notification_new_mail">Cài đặt thông báo</string>
+    <string name="setting_notification_method_label">Thông báo</string>
+    <string name="setting_notification_sound">Đổ chuông</string>
+    <string name="setting_notification_vibrate">Chế độ rung</string>
+    <string name="setting_notification_time_label">Thời gian thông báo</string>
+    <string name="setting_notification_time">Thời gian thông báo</string>
+    <string name="setting_notification_time_2">* Bạn chỉ nhận được thông báo trong khoảng thời gian cài đặt.</string>
+    <string name="setting_notification_from_time">AM 08:00</string>
+    <string name="setting_notification_to_time">PM 19:00</string>
+    <string name="setting_notification_time_error">End time must be bigger than start time.</string>
+    <string name="personal_id">ID người dùng</string>
+    <string name="email">Hộp thư</string>
+    <string name="company_name">Tên tổ chức</string>
+    <string name="phone">Số di động</string>
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">Đồng ý</string>
+    <string name="auto_login_button_no">Hủy</string>
+    <string name="auto_login_company_ID">ID Tổ chức :&#160;</string>
+    <string name="auto_login_user_ID">ID Cá nhân :&#160;</string>
+    <string name="auto_login_title">Tự động đăng nhập​</string>
+    <string name="auto_login_text">Hiện tại đang được đăng nhập trên server CrewCloud. Bạn có muốn đăng nhập bằng tài khoản trên?​</string>
+
+    <string name="permission_denied">Permission Denied</string>
+
+    <!-- PIN ACTIVITY -->
+    <string name="pin_title_1">Set Passcode</string>
+    <string name="pin_title_2">Remove Passcode</string>
+    <string name="pin_title_3">Change Passcode</string>
+    <string name="pin_title_4">Input Passcode</string>
+    <string name="pin_instruction_1_1">Please enter your passcode.</string>
+    <string name="pin_instruction_1_2">Please enter your passcode again.</string>
+    <string name="pin_instruction_2_1">Please enter your passcode.</string>
+    <string name="pin_instruction_3_1">Please enter your current passcode.</string>
+    <string name="pin_instruction_3_2">Please enter your passcode.</string>
+    <string name="pin_instruction_3_3">Please enter your passcode again.</string>
+    <string name="pin_instruction_4_1">Please enter your passcode.</string>
+    <string name="pin_instruction_error">The passcode is incorrect.Please try again.</string>
+
+
+    <string name="navigation_drawer_open">Mở Navication</string>
+    <string name="navigation_drawer_close">Đóng Navication</string>
+
+    <string name="action_settings">Cài đặt</string>
+
+
+    <string name="no_network_error">Không thể truy cập vào server</string>
+
+    <string name="password">Đổi Mật khẩu</string>
+
+    <string name="loading_title">Đang load...</string>
+    <string name="loading_content">Vui lòng chờ một chút.</string>
+
+    <string name="login_empty_input">%s Không được để trống các ô nhập</string>
+
+    <string name="yes">Xác nhận</string>
+    <string name="no">Hủy</string>
+    <string name="exception_error">Can\'t get data because of exception</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="default_box">Mail của tôi</string>
+    <string name="tagged_mail">Tag box</string>
+
+    <!--16/12/2015-->
+    <string name="string_title_compose_email">Viết mail</string>
+    <string name="string_title_mail_create_from">Người gửi</string>
+    <string name="string_title_mail_create_to">Người nhận</string>
+    <string name="string_title_mail_create_cc">Tham khảo</string>
+    <string name="string_title_mail_create_bcc">Tham khảo ẩn</string>
+    <string name="string_title_mail_create_subject">Tiêu đề</string>
+    <string name="string_title_mail_create_attach_name">DaZone Tech file.zip</string>
+    <string name="string_title_mail_create_attach_size">(20MB)</string>
+    <!--18/12/2015-->
+    <string name="string_title_mail_create_ok">Xác nhận</string>
+    <string name="string_title_mail_create_cancel">Hủy</string>
+    <string name="string_title_mail_create_error">Bạn chưa nhập địa chỉ mail người nhận.</string>
+    <string name="more">Xem thêm</string>
+    <string name="delete">Xóa</string>
+    <string name="check_all">Kiểm tra toàn bộ</string>
+    <string name="set_unread">Mail chưa đọc</string>
+    <string name="move_to">Di chuyển</string>
+
+    <!--21/12/2015-->
+    <string name="string_title_mail_detail_date">Ngày</string>
+    <string name="search">Tìm kiếm</string>
+
+    <!--22/12/2015-->
+    <string name="today">Hôm nay</string>
+    <string name="yesterday">Hôm qua</string>
+    <string name="update_data_error">Phát hiện lỗi không xác định.</string>
+
+    <!--23/12/2015-->
+
+    <string name="string_mail_create_quote">Mail nhận</string>
+    <string name="string_success">Hoàn tất upload data</string>
+    <string name="string_alert_delete_mail">Bạn muốn xóa mail?</string>
+    <string name="string_alert_download_mail">Bạn có muốn tải xuống file đính kèm?</string>
+    <string name="string_alert_download_mail_again">Đã tồn tại tập tin có tiêu đề này Bạn có muốn tải xuống tiếp không?</string>
+    <string name="mark_as_important">Thêm vào quan trọng</string>
+    <string name="mark_not_important">Hủy quan trọng</string>
+    <string name="deleting">Đang xóa....</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="download_again">Tải xuống</string>
+    <string name="open_file">Mở file</string>
+
+    <string name="string_update_content">Vui lòng cập nhật phiên bản mới nhất!</string>
+
+
+    <string name="wating_app_download">Đang tiến hành tải file xuống vui lòng chờ chút xíu.</string>
+    <string name="company">Công ty</string>
+
+    <!--29/12/2015-->
+    <string name="string_alert_send_mail_fail">Mail gửi không được. Vì đang trong quá trình upload file nên vui lòng chờ chút.</string>
+
+    <!--30/12/2015-->
+    <string name="string_title_mail_detail_reply">Trả lời</string>
+    <string name="string_title_mail_detail_reply_all">Trả lời tất cả</string>
+    <string name="string_title_mail_detail_forward">Chuyển tiếp</string>
+    <string name="string_title_mail_send">Gửi</string>
+
+    <string name="string_alert_send_mail_success">Đã gửi mail thành công.</string>
+    <string name="moving">Đang di chuyển...</string>
+
+    <!--6/1/2016-->
+    <string name="string_title_mail_detail_resend">Gửi lại</string>
+
+    <!--7/1/2016-->
+
+    <!--8/1/2016-->
+    <string name="string_title_mail_from_address">Địa chỉ gửi</string>
+    <string name="string_title_mail_sender_name">Người gửi</string>
+
+    <!--11/1/2016-->
+    <string name="string_title_menu_name">Người gửi</string>
+    <string name="string_title_menu_to">Người nhận</string>
+    <string name="string_title_menu_title">Tiêu đề</string>
+    <string name="string_title_menu_reg_date">Ngày nhận</string>
+    <string name="string_title_menu_size">Độ lớn</string>
+    <string name="string_title_menu_important">Quan trọng</string>
+    <string name="string_title_menu_read">Ngày đọc</string>
+    <string name="string_title_menu_file">Số file</string>
+
+    <!--12/1/2016-->
+    <string name="string_title_menu_inbox">In Box</string>
+    <string name="string_title_menu_outbox">Out Box</string>
+    <string name="string_title_menu_sortbox">Sorted Mails</string>
+    <string name="string_title_mail_no_tag">Không có</string>
+
+    <!--13/1/2016-->
+    <string name="string_title_menu_none">Không có</string>
+
+    <!--14/1/2016-->
+    <string name="menu_save_pdf">Save Pdf</string>
+
+    <!--18/1/2016-->
+
+    <!--19/1/2016-->
+    <string name="string_today">Hôm nay</string>
+    <string name="string_yesterday">Hôm qua</string>
+    <string name="string_this_month">Tháng này</string>
+    <string name="last_month">Tháng trước</string>
+
+    <!--21/1/2016-->
+
+    <!--22/1/2016-->
+    <string name="string_save_draft">Lưu thư nháp</string>
+    <string name="string_delete_draft">Xóa thư nháp</string>
+    <string name="string_title_menu_unread_box">Unread Mails</string>
+    <string name="string_title_menu_reserved">Reserved Box</string>
+    <string name="string_title_select_box">Chọn hộp thư</string>
+
+    <!--25/1/2016-->
+    <string name="string_no_id">Hiện tại không có tài khoản sử dụng mail!</string>
+
+    <string name="connection_falsed">Không thế truy cập vào địa chỉ trên.</string>
+
+    <!--26/1/2016-->
+    <string name="string_no_data">Không có dữ liệu.</string>
+    <string name="string_move_to_success">Hoàn tất di chuyển mail</string>
+    <string name="string_move_to_fail">Di chuyển mail thất bại</string>
+    <string name="string_company_id">ID tổ chức(công ty)</string>
+
+    <!--27/1/2016-->
+    <string name="menu_tag">Tag</string>
+    <string name="string_title_menu_draft_box">Draft Box</string>
+    <string name="string_title_filter_fail">Cài đặt filter mail thất bại</string>
+    <string name="string_title_filter_success">Cài đặt filter mail haonf tất</string>
+    <string name="string_update_fail">Cập nhật thất bại</string>
+
+    <!--29/1/2016-->
+    <string name="string_discard_draft">Xóa thư nháp</string>
+
+    <!--1/2/2016-->
+    <string name="string_lost_subjet">Bạn chưa nhập tiêu đề mail.</string>
+    <string name="string_not_subjet">Không có tiêu đề mail.</string>
+    <string name="string_not_name">Không có tên mail.</string>
+
+    <!--3/2/2016-->
+    <string name="string_notice_sent_error">Không thể hủy mail gửi.</string>
+    <string name="string_notice_sent_error_select">Vui lòng chọn mail hủy gửi.</string>
+    <string name="string_confirm">Người nhận Xác thực</string>
+    <string name="string_cancel_sent">Không có để hủy được chọn.</string>
+    <string name="string_cancel_sent_for_all">Bạn có muốn hủy tất cả mail nội bộ? Bạn không thể hủy gửi mail khi người nhận đã đọc.</string>
+
+    <!--5/2/2016-->
+    <string name="string_email_error_new">Định dạng email không đúng. Hãy nhập lại thông tin.</string>
+
+    <!--15/2/2016-->
+    <!--17/10/2016-->
+    <string name="the_new_mail_has_arrived">Bạn vừa nhận được mail mới.</string>
+    <string name="are_you_sure_loguot">Bạn có muốn thoát khỏi phần mềm?</string>
+    <string name="date_sent">Ngày gửi</string>
+    <string name="remove_passcode">Remove Passcode</string>
+    <string name="about">Thông tin CrewMail</string>
+    <string name="user_version">Phiên bản người dùng</string>
+    <string name="confirm">Xác Nhận</string>
+    <string name="no_data">Không tìm thấy dữ liệu.</string>
+    <string name="cancle_draft">Cancle</string>
+    <string name="yes_draft">Save</string>
+    <string name="content_draft">Bạn có muốn lưu nội dung thay đổi ở hòm thư nháp?</string>
+    <string name="string_alert_save_mail_success">Mail save success.</string>
+    <string name="company_phone">Số điện thoại công ty</string>
+    <string name="date_of_entry">Ngày vào công ty</string>
+    <string name="birth_day">Ngày sinh</string>
+    <string name="password_change">Đổi mật khẩu</string>
+    <string name="change_text">Change</string>
+    <string name="txt_ask_to_save">Không thể gửi thư. Bạn có muốn lưu lại? \nHệ thống sẽ tự động gửi khi có kết nối internet</string>
+    <string name="open_draff_mail">Trên Mail app trường hợp [Gửi Mail] và [Lưu Draft] thì Tag hoặc hình ảnh sẽ bị mất đi. Dù vậy bạn vẫn muốn tiếp tục?</string>
+    <string name="organization_chart">Sơ đồ tổ chức</string>
+
+</resources>

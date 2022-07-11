@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_list_check_all"
+        android:icon="@drawable/navbar_check_ic"
+        android:title="@string/check_all"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|always"/>
+
+    <!--<item-->
+        <!--android:icon="@drawable/tag_icon_01"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="@string/more"-->
+        <!--android:id="@+id/menu_more_search"-->
+        <!--android:actionViewClass="android.widget.ImageView"-->
+        <!--&gt;-->
+    <!--</item>-->
+
+    <item
+        android:icon="@drawable/ic_sort_white_24dp"
+        app:showAsAction="always"
+        android:title="@string/more"
+        android:id="@+id/menu_sort">
+    </item>
+</menu>

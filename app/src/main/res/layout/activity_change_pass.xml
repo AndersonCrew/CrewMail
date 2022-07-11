@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                style="@style/Button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/padding_block"
+                android:src="@drawable/ic_keyboard_backspace_white_48dp" />
+
+            <TextView
+                style="@style/SettingRow"
+                android:layout_toRightOf="@+id/btn_back"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:text="@string/profle"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_old_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/current_password"
+        android:padding="@dimen/dimen_12_24"
+        android:textSize="@dimen/text_16_32" />
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_password"
+        android:padding="@dimen/dimen_12_24"
+        android:textSize="@dimen/text_16_32" />
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_confirm_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:padding="@dimen/dimen_12_24"
+        android:textSize="@dimen/text_16_32" />
+
+    <Button
+        android:id="@+id/fragment_change_pass_btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10_20"
+        android:background="@drawable/bg_btn_change_pass"
+        android:text="@string/change_password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_16_32" />
+
+</LinearLayout>
+</layout>

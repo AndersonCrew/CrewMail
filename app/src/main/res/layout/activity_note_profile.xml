@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/st_bg"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                style="@style/Button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/padding_block"
+                android:src="@drawable/ic_keyboard_backspace_white_48dp" />
+
+            <TextView
+                style="@style/SettingRow"
+                android:layout_toRightOf="@+id/btn_back"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:text="@string/action_settings"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_20"
+                android:paddingTop="@dimen/dimen_10_20">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/setting_page_icon"
+                    android:layout_height="@dimen/setting_page_icon"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:src="@drawable/avatar_l" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:text="@string/profle"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/setting_tv_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:id="@+id/ln_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_normal">
+
+
+                <com.dazone.crewemail.customviews.RoundedLayoutCircle
+                    android:id="@+id/rcl_notify"
+                    android:layout_width="@dimen/setting_page_icon_under"
+                    android:layout_height="@dimen/setting_page_icon_under"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_btn_alarm" />
+                </com.dazone.crewemail.customviews.RoundedLayoutCircle>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:layout_toRightOf="@+id/rcl_notify"
+                    android:text="@string/setting_notification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_tv_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:id="@+id/ln_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_normal"
+                android:visibility="visible">
+
+                <com.dazone.crewemail.customviews.RoundedLayoutCircle
+                    android:layout_width="@dimen/setting_page_icon_under"
+                    android:layout_height="@dimen/setting_page_icon_under"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menuleft_ic_setting_white" />
+                </com.dazone.crewemail.customviews.RoundedLayoutCircle>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:text="@string/setting_general"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_tv_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:id="@+id/ln_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_normal"
+                android:visibility="visible">
+
+                <!--   <RelativeLayout
+                       android:layout_width="@dimen/setting_page_icon_under"
+                       android:layout_height="@dimen/setting_page_icon_under"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="@dimen/setting_mgleft"
+                       android:background="@drawable/bg_circle_blue_more_page">-->
+                <com.dazone.crewemail.customviews.RoundedLayoutCircle
+                    android:layout_width="@dimen/setting_page_icon_under"
+                    android:layout_height="@dimen/setting_page_icon_under"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_info_outline_white_18dp" />
+                </com.dazone.crewemail.customviews.RoundedLayoutCircle>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_tv_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:id="@+id/ln_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_normal">
+
+
+                <com.dazone.crewemail.customviews.RoundedLayoutCircle
+                    android:id="@+id/rcl_logout"
+                    android:layout_width="@dimen/setting_page_icon_under"
+                    android:layout_height="@dimen/setting_page_icon_under"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/setting_ic_logout" />
+                </com.dazone.crewemail.customviews.RoundedLayoutCircle>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/setting_mgleft"
+                    android:layout_toRightOf="@+id/rcl_logout"
+                    android:text="@string/logout"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/setting_tv_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "833355344846",
+    "firebase_url": "https://crewmailoff.firebaseio.com",
+    "project_id": "crewmailoff",
+    "storage_bucket": "crewmailoff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833355344846:android:7dd710e42b693853",
+        "android_client_info": {
+          "package_name": "com.crewcloud.apps.crewMail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833355344846-s8lkr26mlpib1ijln6t5u5qqlb7v2p9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crewcloud.apps.crewMail",
+            "certificate_hash": "54ec2285a8cb3ea82703301906580dd3157f87cf"
+          }
+        },
+        {
+          "client_id": "833355344846-r1bjkk3m2kbivs13o2gc1vkkq5lr4sne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjuXvY3CmIq-3cMmBhNK8cn26DYGHEt60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833355344846-r1bjkk3m2kbivs13o2gc1vkkq5lr4sne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

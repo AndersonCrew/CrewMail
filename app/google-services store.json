@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "120079230335",
+    "firebase_url": "https://fit-union-123005.firebaseio.com",
+    "project_id": "fit-union-123005",
+    "storage_bucket": "fit-union-123005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120079230335:android:00d31798943cbabe",
+        "android_client_info": {
+          "package_name": "com.dazone.crewemail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120079230335-ipfv2r8da8kieioni2d2rvm70hjmuht5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dazone.crewemail",
+            "certificate_hash": "54ec2285a8cb3ea82703301906580dd3157f87cf"
+          }
+        },
+        {
+          "client_id": "120079230335-sosh990llq89avkdnpkig8hmvcq14r52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLh0N3SN7M-KHWxdIdBr0CjJb-vkt9sM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120079230335-sosh990llq89avkdnpkig8hmvcq14r52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

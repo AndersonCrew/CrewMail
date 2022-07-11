@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_block">
+
+    <ImageView
+        android:id="@+id/imeCheckTag"
+        android:layout_width="@dimen/dimen_25_50"
+        android:layout_height="@dimen/dimen_25_50"
+        android:layout_gravity="left|center"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5_10"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:padding="@dimen/dimen_5_10"
+        android:singleLine="true"
+        android:text="Tag"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_32" />
+</LinearLayout>

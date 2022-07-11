@@ -1,0 +1,25 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/app_base_color_login</item>
+    <!--    <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="PinNumber">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pin_number_text_size</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- COMMON -->
+    <style name="Button">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+</resources>

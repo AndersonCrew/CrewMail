@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/main"
+            android:background="@android:color/white">
+            <TextView
+                style="@style/text_16sp_black"
+                android:id="@+id/txtTitle"
+                android:text="kiem tra xem sao"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:layout_marginTop="@dimen/dimen_10_20"
+                android:layout_marginBottom="@dimen/dimen_3_6"/>
+            <TextView
+                style="@style/text_13sp_gray"
+                android:id="@+id/txtDate"
+                android:text="2016-02-02 10:20 am"
+                android:layout_marginLeft="@dimen/dimen_10_20"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:layout_marginTop="@dimen/dimen_2_4"
+                android:layout_marginBottom="@dimen/dimen_10_20"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_no_data"
+            android:textSize="@dimen/text_18_36"
+            android:text="@string/string_no_data"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_50_100"
+            />
+    <View android:id="@+id/view" android:layout_below="@+id/main" style="@style/border"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/view"
+            android:id="@+id/common_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="visible"/>
+    </RelativeLayout>

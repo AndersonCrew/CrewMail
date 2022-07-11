@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/btn_share_search_height" />
+            <corners android:radius="@dimen/btn_share_search_radius" />
+            <stroke
+                android:width="@dimen/btn_share_border"
+                android:color="@color/share_border_color" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</selector>

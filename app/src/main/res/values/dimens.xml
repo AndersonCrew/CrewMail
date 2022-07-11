@@ -1,0 +1,89 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Padding & Margin -->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">9dp</dimen>
+    <dimen name="margin_big">13dp</dimen>
+    <dimen name="margin_block">16dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_block">16dp</dimen>
+
+    <!-- Setting Activity -->
+    <dimen name="setting_row_padding_left">16dp</dimen>
+    <dimen name="setting_row_text_size">16sp</dimen>
+    <dimen name="divider_add_new_schedule_height">0.67dp</dimen>
+
+    <!-- General Settings -->
+    <dimen name="general_setting_icon">36dp</dimen>
+
+    <!-- Notification Settings -->
+    <dimen name="notification_label_row">36dp</dimen>
+    <dimen name="notification_label_text_size">16sp</dimen>
+
+
+    <!-- PIN Activity -->
+    <dimen name="pin_title_text_size">20sp</dimen>
+    <dimen name="pin_instruction_text_size">18sp</dimen>
+    <dimen name="pin_size">24dp</dimen>
+    <dimen name="pin_number_text_size">36sp</dimen>
+
+    <!--Common-->
+    <dimen name="divider_height">0.67dp</dimen>
+    <dimen name="dimen_05_1">0.5dp</dimen>
+    <dimen name="dimen_1_2">1dp</dimen>
+    <dimen name="dimen_2_4">2dp</dimen>
+    <dimen name="dimen_3_6">3dp</dimen>
+    <dimen name="dimen_4_8">4dp</dimen>
+    <dimen name="dimen_5_10">5dp</dimen>
+    <dimen name="dimen_7_15">7dp</dimen>
+    <dimen name="dimen_8_16">8dp</dimen>
+    <dimen name="dimen_10_20">10dp</dimen>
+    <dimen name="dimen_12_24">12dp</dimen>
+    <dimen name="dimen_15_30">15dp</dimen>
+    <dimen name="dimen_16_32">16dp</dimen>
+    <dimen name="dimen_18_36">18dp</dimen>
+    <dimen name="dimen_20_40">20dp</dimen>
+    <dimen name="dimen_25_50">25dp</dimen>
+    <dimen name="dimen_28_56">28dp</dimen>
+    <dimen name="dimen_35_70">35dp</dimen>
+    <dimen name="dimen_40_80">40dp</dimen>
+    <dimen name="dimen_45_90">45dp</dimen>
+    <dimen name="dimen_50_100">50dp</dimen>
+    <dimen name="dimen_70_140">70dp</dimen>
+    <dimen name="dimen_110_220">110dp</dimen>
+    <dimen name="dimen_180_360">180dp</dimen>
+    <dimen name="text_13_25">13sp</dimen>
+    <dimen name="text_14_28">14sp</dimen>
+    <dimen name="text_15_30">15sp</dimen>
+    <dimen name="text_16_32">16sp</dimen>
+    <dimen name="text_17_35">17sp</dimen>
+    <dimen name="text_18_36">18sp</dimen>
+
+
+    <dimen name="activity_login_user_margin">30dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+
+    <dimen name="btn_share_border">0.67dp</dimen>
+    <dimen name="btn_share_height">34dp</dimen>
+    <dimen name="btn_share_radius">17dp</dimen>
+    <dimen name="btn_share_search_height">38.67dp</dimen>
+    <dimen name="btn_share_search_radius">19.33dp</dimen>
+
+    <dimen name="setting_tv_size">16sp</dimen>
+    <dimen name="setting_tv_size_default">15sp</dimen>
+    <dimen name="setting_mgleft">20dp</dimen>
+    <dimen name="setting_page_icon">70dp</dimen>
+    <dimen name="setting_page_icon_under">40dp</dimen>
+    <dimen name="tree_user_avatar_dimen">48dp</dimen>
+    <dimen name="tree_user_text_size">13sp</dimen>
+    <dimen name="text_14_dp">14sp</dimen>
+    <dimen name="text_16_dp">16sp</dimen>
+    <dimen name="text_13_dp">13sp</dimen>
+    <dimen name="dimen_42">42dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_17">17sp</dimen>
+    <dimen name="dimen_16_sp">16sp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/txtMailCreateSpinerSingleDiver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dimen_7_15"
+        android:singleLine="true"
+        android:gravity="left|center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_16_32" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/disable_text_color"/>
+
+</LinearLayout>

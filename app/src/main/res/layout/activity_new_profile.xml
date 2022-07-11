@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="profile"
+            type="com.dazone.crewemail.data.MailProfileData" />
+
+        <variable
+            name="user"
+            type="com.dazone.crewemail.data.UserData" />
+
+        <variable
+            name="callback"
+            type="com.dazone.crewemail.interfaces.OnclickCallBack" />
+
+        <variable
+            name="myprofile"
+            type="com.dazone.crewemail.viewmodel.MyProfileViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    style="@style/Button"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:onClick="@{(v) -> callback.onClickBack(v)}"
+                    android:padding="@dimen/padding_block"
+                    android:src="@drawable/ic_keyboard_backspace_white_48dp" />
+
+                <TextView
+                    style="@style/SettingRow"
+                    android:layout_toRightOf="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:text="@string/profle"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dimen_5_10"
+                    android:paddingTop="@dimen/dimen_20_40">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/activity_new_profile_iv_avatar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="@dimen/dimen_10_20"
+                        tools:imageUrl="@{profile.avatar}" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/activity_new_profile_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_new_profile_iv_avatar"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{profile.fullName}"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_16_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_new_profile_tv_name"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/dimen_10_20"
+                        android:text="@{myprofile.positionDepartName}"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_13_dp" />
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/layout_view_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10_20"
+                    android:visibility="gone">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/company_name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{user.companyName}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/layout_view_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10_20"
+                    android:visibility="gone">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/string_company_id"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{user.Domain}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10_20"
+                    android:visibility="gone">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/personal_id"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{profile.userId}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/layout_view_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10_20">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/activity_new_profile_tv_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/password_change"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_new_profile_tv_pass"
+                        android:layout_marginRight="@dimen/dimen_10_20"
+                        android:layout_toLeftOf="@+id/btnChange"
+                        android:inputType="textPassword"
+                        android:text="@{myprofile.getPassWord}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/btnChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginRight="11dp"
+                        android:background="@drawable/bg_change_pass"
+                        android:onClick="@{(v) -> callback.onClickChangePass(v, profile)}"
+                        android:padding="@dimen/dimen_8_16"
+                        android:text="@string/change_text"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_view_line" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10_20">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/activity_new_profile_tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/email"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_new_profile_tv_email"
+                        android:text="@{profile.mailAddress}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_10_20"
+                        android:onClick="@{(v) -> callback.onClickSendEmail(v, profile.mailAddress)}"
+                        android:src="@drawable/ic_mail_white_24dp"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10_20">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/activity_new_profile_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/phone"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_new_profile_tv_phone"
+                        android:text="@{profile.cellPhone}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+
+                    <ImageView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="@{(v) -> callback.onClickMessage(v, profile.cellPhone)}"
+                        android:src="@drawable/ic_mail_white_24dp"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/activity_new_profile_iv_call_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_10_20"
+                        android:layout_toLeftOf="@id/message"
+                        android:onClick="@{(v) -> callback.onClickCall(v, profile.cellPhone)}"
+                        android:src="@drawable/ic_phone_white_24dp"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10_20">
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:id="@+id/tv_company_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/company_phone"
+                        android:textAllCaps="true"
+                        android:textColor="@color/roboto_color"
+                        android:textSize="@dimen/text_14_dp" />
+
+                    <com.dazone.crewemail.view.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_company_contact"
+                        android:text="@{profile.companyPhone}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_dp" />
+
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_view_line" />
+
+
+                <LinearLayout
+                    android:id="@+id/ln_entrance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_entrance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_10_20">
+
+                        <com.dazone.crewemail.view.RobotoTextView
+                            android:id="@+id/tv_date_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/date_of_entry"
+                            android:textAllCaps="true"
+                            android:textColor="@color/roboto_color"
+                            android:textSize="@dimen/text_14_dp" />
+
+                        <com.dazone.crewemail.view.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_date_start"
+                            android:text="@{profile.entranceDate}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_16_dp" />
+
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_view_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_10_20">
+
+                        <com.dazone.crewemail.view.RobotoTextView
+                            android:id="@+id/tv_date_of_birth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/birth_day"
+                            android:textAllCaps="true"
+                            android:textColor="@color/roboto_color"
+                            android:textSize="@dimen/text_14_dp" />
+
+                        <com.dazone.crewemail.view.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_date_of_birth"
+                            android:text="@{profile.birthDate}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_16_dp" />
+
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_view_line" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>

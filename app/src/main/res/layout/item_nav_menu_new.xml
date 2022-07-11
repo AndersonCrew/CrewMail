@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_nav_menu_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/btn_press_white">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/dimen_25_50"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_nav_menu_drop"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            android:layout_marginTop="@dimen/dimen_10_20"
+            android:layout_marginBottom="@dimen/dimen_10_20"
+            android:layout_marginLeft="@dimen/dimen_3_6" />
+        <TextView
+            android:id="@+id/item_nav_menu_name"
+            style="@style/text_16sp_black"
+            android:drawablePadding="@dimen/dimen_5_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dimen_10_20"
+            android:paddingLeft="@dimen/dimen_5_10"
+            android:paddingTop="@dimen/dimen_10_20" />
+
+        <TextView
+            android:id="@+id/item_nav_menu_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14_28"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/dimen_5_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dimen_10_20"
+            android:paddingLeft="@dimen/dimen_3_6"
+            android:paddingTop="@dimen/dimen_10_20"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <View style="@style/border" />
+</LinearLayout>

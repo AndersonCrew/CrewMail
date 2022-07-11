@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_no_data"
+            android:textSize="@dimen/text_18_36"
+            android:text="@string/string_no_data"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_50_100"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/common_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="vertical"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

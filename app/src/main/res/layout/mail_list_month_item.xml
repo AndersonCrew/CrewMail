@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mail_month_background"
+    android:id="@+id/linearMainMonth">
+    <TextView
+        android:paddingLeft="@dimen/dimen_5_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_25_50"
+        android:gravity="left|center"
+        android:clickable="false"
+        android:textSize="@dimen/text_15_30"
+        android:textColor="@color/mail_month_title"
+        android:id="@+id/txtMonth"
+        android:background="#00000000">
+    </TextView>
+</LinearLayout>
