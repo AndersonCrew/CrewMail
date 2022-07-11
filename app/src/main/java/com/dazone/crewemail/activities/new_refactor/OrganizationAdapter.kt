@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.dazone.crewemail.R
 import com.dazone.crewemail.data.PersonData
 import com.dazone.crewemail.databinding.ItemOrganizationNewBinding
 import kotlinx.coroutines.*
@@ -72,9 +73,11 @@ class OrganizationAdapter(private val onCheckedDone: (PersonData, Boolean) -> Un
             if(holder.binding.rvMembers.visibility == View.GONE) {
                 holder.binding.rvMembers.visibility = View.VISIBLE
                 holder.binding.rvChildOrganization.visibility = View.VISIBLE
+                holder.binding.imgFolder.setBackgroundResource(R.drawable.ic_folder_open)
             } else {
                 holder.binding.rvMembers.visibility = View.GONE
                 holder.binding.rvChildOrganization.visibility = View.GONE
+                holder.binding.imgFolder.setBackgroundResource(R.drawable.ic_folder_close_new)
             }
         }
     }

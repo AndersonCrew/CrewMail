@@ -10,10 +10,9 @@
         app:layout_constraintTop_toTopOf="@id/icCheck"
         app:layout_constraintBottom_toBottomOf="@id/icCheck"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_folder"
+        android:src="@drawable/ic_folder_open"
         android:layout_width="18dp"
-        android:layout_height="18dp"
-        app:tint="@color/gray_dark" />
+        android:layout_height="18dp" />
 
     <TextView
         android:id="@+id/tvTitle"
